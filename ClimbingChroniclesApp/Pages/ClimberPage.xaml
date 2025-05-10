@@ -1,0 +1,29 @@
+﻿<Page x:Class="ClimbingChroniclesApp.Pages.ClimberPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Альпинисты">
+    <Grid Margin="10">
+        <DataGrid x:Name="ClimberDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="300" Margin="0,10,0,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="Auto"/>
+                <DataGridTextColumn Header="ФИО" Binding="{Binding full_name}" Width="*"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding address}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,30,0,0">
+            <TextBlock Text="ФИО" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox x:Name="FullNameTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Адрес" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox x:Name="AddressTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
+
+            <Button Content="Добавить альпиниста" Width="250" Margin="0,5"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Content="Редактировать" Width="120" Margin="5"/>
+                <Button Content="Удалить" Width="120" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

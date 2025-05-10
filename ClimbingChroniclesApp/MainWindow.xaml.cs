@@ -1,24 +1,32 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace ClimbingChroniclesApp
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Climbers_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.ClimberPage());
+        }
+
+        private void Mountains_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.MountainPage());
+        }
+
+        private void Groups_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.GroupPage());
+        }
+
+        private void Expeditions_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.ExpeditionPage());
         }
     }
 }

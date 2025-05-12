@@ -14,8 +14,12 @@
         </DataGrid>
 
         <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Orientation="Vertical" Margin="0,30,0,0">
-            <TextBlock Text="ФИО" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBlock Text="Фамилия" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox x:Name="MiddleNameTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
+            <TextBlock Text="Имя" HorizontalAlignment="Left" Margin="0,0,0,5"/>
             <TextBox x:Name="FullNameTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
+            <TextBlock Text="Отчество" HorizontalAlignment="Left" Margin="0,0,0,5"/>
+            <TextBox x:Name="PatromymicNameTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
 
             <TextBlock Text="Адрес" HorizontalAlignment="Left" Margin="0,0,0,5"/>
             <TextBox x:Name="AddressTextBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,0,15"/>
